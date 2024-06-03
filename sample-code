@@ -1,3 +1,34 @@
 {
-  "message": "This is my 1st job"
+  "server": {
+    "port": 8080,
+    "host": "54.197.10.240"
+  },
+  "database": {
+    "type": "mongodb",
+    "host": "54.197.10.240",
+    "port": 27017,
+    "username": "dbuser",
+    "password": "dbpassword",
+    "databaseName": "myapp"
+  },
+  "authentication": {
+    "jwtSecret": "your_jwt_secret",
+    "tokenExpiry": "4h"
+  },
+  "logging": {
+    "level": "info",
+    "filePath": "/var/log/myapp.log"
+  },
+  "api": {
+    "basePath": "/api/v1",
+    "timeout": 5000
+  },
+  "frontend": {
+    "staticFilesPath": "/public",
+    "indexFile": "index.html"
+  },
+  "features": {
+    "enableRegistration": true,
+    "enableOAuth": false
+  }
 }
